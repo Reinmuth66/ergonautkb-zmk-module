@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: Reinmuth66
       url-base: https://github.com/Reinmuth66/
-    - name: zettaface
-      url-base: https://github.com/zettaface
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,8 +17,8 @@ manifest:
     - name: zmk-analog-input-driver
       remote: Reinmuth66
       revision: main
-    - name: zmk-input-processor-keybind
-      remote: zettaface
-      revision: main
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
   self:
     path: config
