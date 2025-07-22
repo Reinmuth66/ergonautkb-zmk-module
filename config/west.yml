@@ -3,9 +3,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: Reinmuth66
-      url-base: https://github.com/Reinmuth66/
+      url-base: https://github.com/Reinmuth66
     - name: kot149
       url-base: https://github.com/kot149
+    - name: jjggzhou
+      url-base: https://github.com/jjggzhou
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +17,7 @@ manifest:
       remote: Reinmuth66
       revision: main
     - name: zmk-analog-input-driver
-      remote: Reinmuth66
+      remote: jjggzhou
       revision: main
     - name: zmk-mouse-gesture
       remote: kot149
