@@ -158,7 +158,7 @@
 	input-processors = <&zip_mouse_gesture>;
 };
 
-#include <mouse-gesture.dtsi>
+/*#include <mouse-gesture.dtsi>
 
 &zip_mouse_gesture {
     stroke-size = <300>; // Size of one stroke in a gesture. Note that larger stroke than this value is fine, as duplicate directions will be ignored.
@@ -183,7 +183,7 @@
         pattern = <GESTURE_DOWN GESTURE_LEFT>;
         bindings = <&kp LC(T)>;
     };
-};
+};*/
 
 &kscan0 {
 	col-gpios
