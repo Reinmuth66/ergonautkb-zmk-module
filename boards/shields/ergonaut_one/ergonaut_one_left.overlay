@@ -153,6 +153,38 @@
 };
 */
 
+&joystick_listener {
+	status = "okay";
+	input-processors = <&zip_mouse_gesture>;
+};
+
+#include <mouse-gesture.dtsi>
+
+&zip_mouse_gesture {
+    stroke-size = <300>; // Size of one stroke in a gesture. Note that larger stroke than this value is fine, as duplicate directions will be ignored.
+    //enable-eager-mode; // Optional: Execute bindings immediately when gesture pattern is matched. When not specified, bindings are executed when gesture recognition becomes inactive.
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+};
+
 &kscan0 {
 	col-gpios
 		= <&gpio0 9 GPIO_ACTIVE_HIGH>
